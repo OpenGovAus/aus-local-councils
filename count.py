@@ -15,7 +15,7 @@ print('%d local councils were found.' % (len(all_councils)))
 
 open('aus_councils.json', 'w').write(json.dumps({'QLD': aus_local_councils.qld.councils,
 'NSW': aus_local_councils.nsw.councils,
-'NT': aus_local_councils.nsw.councils,
+'NT': aus_local_councils.nt.councils,
 'SA': aus_local_councils.sa.councils,
 'TAS': aus_local_councils.tas.councils,
 'WA': aus_local_councils.wa.councils}, indent=2))
