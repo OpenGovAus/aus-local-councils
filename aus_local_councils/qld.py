@@ -1,13 +1,13 @@
+import json
 from requests import get
-from bs4 import BeautifulSoup
 
-url = 'https://www.nqlegal.com.au/townsville-conveyancing-solicitors/queensland-councils-shires/' # Using this because the official government directory returns a 404 (very professional)
+url = 'https://lgdirectory.dlgrma.qld.gov.au/php/councilList.php'
 
 def get_councils():
     _councils = []
-    rows = BeautifulSoup(get(url).text, 'lxml').find_all('table')[-1].find_all('tr')
-    for row in rows[1:]:
-        _councils.append(row.find('td').text)
+    council_data = json.loads(get(url).text)
+    for council in council_data:
+        _councils.append(council['councilname'])
     return(_councils)
 
 councils = get_councils()
