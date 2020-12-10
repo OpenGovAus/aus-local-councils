@@ -2,6 +2,8 @@
 
 This Python packagage returns lists of all local councils in Australia, sorted by state/territory.
 
+A list of all Australian local councils can be found in aus_councils.json
+
 ## Setup
 
 Install required packages with **pip3**:
