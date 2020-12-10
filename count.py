@@ -18,4 +18,5 @@ open('aus_councils.json', 'w').write(json.dumps({'QLD': aus_local_councils.qld.c
 'NT': aus_local_councils.nt.councils,
 'SA': aus_local_councils.sa.councils,
 'TAS': aus_local_councils.tas.councils,
-'WA': aus_local_councils.wa.councils}, indent=2))
+'VIC': aus_local_councils.vic.councils,
+'WA': aus_local_councils.wa.councils,}, indent=2))
