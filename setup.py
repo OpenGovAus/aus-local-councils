@@ -7,7 +7,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='aus-local-councils',
-    version='1.0',
+    version='1.1',
     description='Get list of local councils for Australian states/territories.',
     long_description=long_description,
     long_description_content_type='text/markdown',
